@@ -1,4 +1,4 @@
-#print Fucntion
+#print Function
 
 print("Learning Python")
 print("Hafiz Salman")
@@ -11,7 +11,7 @@ print(id(name))
 print(id(Name))
 
 
-#Declaring Variable and Assigning Values
+#Declaring Variables and Assigning Values
 
 a = 40
 b = 90
