@@ -1,22 +1,22 @@
 # OOPS in Python
 
-# class Student :
-#     name = "Salman"
+ class Student :
+     name = "Salman"
 
-# s1 = Student ()
-# print (s1.name)
-
-
-
-#_ _init_ _ Function
+ s1 = Student ()
+ print (s1.name)
 
 
-# Default Constructors
+
+_ _init_ _ Function
 
 
-# class Student:
+ Default Constructors
 
-#     def __init__(self):
+
+ class Student:
+
+     def __init__(self):
 #         pass
 
 
@@ -24,22 +24,22 @@
 # Parameterized Constructors
 
 
-# class Student:
+ class Student:
 
-#     def __init__(self, name , marks):
-#         self.name = name
-#         self.marks = marks
-#         print ("Adding new students..")
+     def __init__(self, name , marks):
+         self.name = name
+         self.marks = marks
+         print ("Adding new students..")
         
 
-# s1 = Student ("Hafiz", 89)
-# print (s1.name, s1.marks)
+ s1 = Student ("Hafiz", 89)
+ print (s1.name, s1.marks)
 
-# s2 = Student ("Salman", 95)
-# print (s2.name , s2.marks)
+ s2 = Student ("Salman", 95)
+ print (s2.name , s2.marks)
 
-# s3 = Student ("Aamir", 99)
-# print (s3.name, s3.marks)
+ s3 = Student ("Aamir", 99)
+ print (s3.name, s3.marks)
 
 
 
@@ -47,44 +47,44 @@
 # Class & Instance Attribute
 
 
-# class Student:
+ class Student:
 
-#     college_name = "ABCD"           # Class & Instance Attribute
+     college_name = "ABCD"           # Class & Instance Attribute
 
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+     def __init__(self, name, marks):
+         self.name = name
+         self.marks = marks
 
-# s1 = Student ("Hafiz", 88)
-# print (s1.name , s1.marks)
+ s1 = Student ("Hafiz", 88)
+ print (s1.name , s1.marks)
 
-# s2 = Student ("Salman", 99)
-# print (s2.name , s2.marks)       
+ s2 = Student ("Salman", 99)
+ print (s2.name , s2.marks)       
 
-# print (Student.college_name)
+ print (Student.college_name)
 
 
 
 # Method
 
 
-# class Student:
-#     college_name = "ABCD"
+ class Student:
+     college_name = "ABCD"
 
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+     def __init__(self, name, marks):
+         self.name = name
+         self.marks = marks
 
-#     def welcome (self):                             # Method 
-#         print ("Welcome Students", self.name)
+     def welcome (self):                             # Method 
+         print ("Welcome Students", self.name)
 
-#     def get_marks(self):                            # Method
-#         return  self.marks
+     def get_marks(self):                            # Method
+         return  self.marks
 
-# s1 = Student ("Hafiz", 88)
-# s1.welcome()
+ s1 = Student ("Hafiz", 88)
+ s1.welcome()
 
-# print (s1.get_marks())
+ print (s1.get_marks())
 
 
 
@@ -97,41 +97,41 @@
 
 
 
-# class Student :
+ class Student :
 
-#     def __init__(self, name, marks,):
-#         self.name = name
-#         self.marks = marks
+     def __init__(self, name, marks,):
+         self.name = name
+         self.marks = marks
 
-#     def get_avg (self):
-#         sum = 0
+     def get_avg (self):
+         sum = 0
 
-#         for val in self.marks:
-#             sum += val
-#         print ("Hi", self.name, "Your avg score is:", sum/3)
+         for val in self.marks:
+             sum += val
+         print ("Hi", self.name, "Your avg score is:", sum/3)
 
 
-# s1 = Student ("Hafiz", [95, 82, 99])
-# s1.get_avg()
+ s1 = Student ("Hafiz", [95, 82, 99])
+ s1.get_avg()
 
 
 # Abstraction 
 
 
-# class Car ():
+ class Car ():
 
-#     def __init__(self):
-#         self.acc = False
-#         self.brk = False
-#         self.clutch = False
+     def __init__(self):
+         self.acc = False
+         self.brk = False
+         self.clutch = False
 
-#     def start (self):
-#         self.clutch = True
-#         self.acc = True
-#         print("Car is started..")
+     def start (self):
+         self.clutch = True
+         self.acc = True
+         print("Car is started..")
 
-# car1 = Car()
-# car1.start()
+ car1 = Car()
+ car1.start()
 
 
 # Create Account class with 2 attributes-balance & account no.
@@ -140,33 +140,31 @@
 
  
 
-# class Account ():
+ class Account ():
 
-#     def __init__(self, bal, acc):
+     def __init__(self, bal, acc):
         
-#         self.balance = bal
-#         self.account_no = acc
+         self.balance = bal
+         self.account_no = acc
 
 
-#     # Debit/Credit Method 
-
-#     def debit (self, amount):
-#         self.balance -= amount
-#         print ("Rs.", amount, "Was Debited")
-#         print ("Total balance = ", self.get_balance())
+     def debit (self, amount):
+         self.balance -= amount
+         print ("Rs.", amount, "Was Debited")
+         print ("Total balance = ", self.get_balance())
 
 
-#     def credit (self, amount):
-#         self.balance += amount
-#         print ("Rs.", amount, "Was Credited")
-#         print ("Total balance = ", self.get_balance())
+     def credit (self, amount):
+         self.balance += amount
+         print ("Rs.", amount, "Was Credited")
+         print ("Total balance = ", self.get_balance())
 
-#     def get_balance (self):
-#         return self.balance            
+     def get_balance (self):
+        return self.balance            
 
-# acc1 = Account (6000, 5055)
-# acc1.debit (500)
-# acc1.credit (600)   
+ acc1 = Account (6000, 5055)
+ acc1.debit (500)
+ acc1.credit (600)   
 
 
 
@@ -175,52 +173,52 @@
 
 # class Account ():
 
-#     def __init__ (self, bal, acc):
-#         self.balance = bal
-#         self.account_no = acc
+     def __init__ (self, bal, acc):
+         self.balance = bal
+         self.account_no = acc
 
-#     def debit (self, amount):
-#         self.balance -= amount
-#         print ("Rs.", amount, "Was debited From your account" )
-#         print ("Total balance =", self.get_balance())
+     def debit (self, amount):
+         self.balance -= amount
+         print ("Rs.", amount, "Was debited From your account" )
+         print ("Total balance =", self.get_balance())
 
     
-#     def credit (self, amount):
-#         self.balance += amount
-#         print ("Rs.", amount, "Was credited in your account")
-#         print ("Total balance =", self.get_balance())
+     def credit (self, amount):
+         self.balance += amount
+         print ("Rs.", amount, "Was credited in your account")
+         print ("Total balance =", self.get_balance())
 
-#     def get_balance (self):
-#         return self.balance
+     def get_balance (self):
+         return self.balance
 
-# acc1 = Account (6000, 5055)
-# acc1.debit (100)
-# acc1.credit (200)
+ acc1 = Account (6000, 5055)
+ acc1.debit (100)
+ acc1.credit (200)
 
 
 # Inheritance
 
 
-# class Car :
-#     @staticmethod
+ class Car :
+     @staticmethod
 
-#     def start ():
-#         print ("Car started..")
+     def start ():
+         print ("Car started..")
 
-#     @staticmethod
+     @staticmethod
 
-#     def stop ():
-#         print ("Car stopped..")
+     def stop ():
+         print ("Car stopped..")
 
 
-# class ToyotaCar (Car):
+ class ToyotaCar (Car):
 
-#     def __init__(self, name):
-#         self.name = name
+     def __init__(self, name):
+         self.name = name
 
-# car1 = ToyotaCar ("Mercedes")
+ car1 = ToyotaCar ("Mercedes")
 
-# print (car1.start())
+ print (car1.start())
 
 
 
@@ -229,47 +227,47 @@
 # Class Method
 
 
-# class Person:
-#     name = "anonymous"
+ class Person:
+     name = "anonymous"
 
-#     @classmethod
+     @classmethod
 
-#     def ChangeName (cls, name):
-#         cls.name = name
+     def ChangeName (cls, name):
+         cls.name = name
 
 
-# p1 = Person ()
-# p1.ChangeName ("Hafiz Salman Sarwar")
+ p1 = Person ()
+ p1.ChangeName ("Hafiz Salman Sarwar")
 
-# print (p1.name)
+ print (p1.name)
 
 
 
 # Property
 
 
-# class StudentResult:
+ class StudentResult:
 
-#     def __init__(self, Phy, Math, Comp):
+     def __init__(self, Phy, Math, Comp):
 
-#         self.Phy = Phy
-#         self.Math = Math
-#         self.Comp = Comp
+         self.Phy = Phy
+         self.Math = Math
+         self.Comp = Comp
         
 
 
-#     @property                                                                      #Property
+     @property                                                                      #Property
 
-#     def percentage (self):
+    def percentage (self):
 
-#         return str ((self.Phy + self.Math + self.Comp) / 3) + "%"   
+         return str ((self.Phy + self.Math + self.Comp) / 3) + "%"   
 
-# stu1 = StudentResult (88, 86, 87)
-# print (stu1.percentage)
+ stu1 = StudentResult (88, 86, 87)
+ print (stu1.percentage)
 
-# stu1.Math = 80
+ stu1.Math = 80
 
-# print (stu1.percentage)
+ print (stu1.percentage)
                  
 
 # Polymorphism
@@ -278,41 +276,41 @@
 
 
 
-# print (1 + 2)
-# print ("Hafiz" + "Salman")
-# print ([1, 2, 3] + [4, 5, 6])
+ print (1 + 2)
+ print ("Hafiz" + "Salman")
+ print ([1, 2, 3] + [4, 5, 6])
 
 
 
 
-# class Complex:
+ class Complex:
 
-#     def __init__ (self, real, img):
-#         self.real = real
-#         self.img = img
+     def __init__ (self, real, img):
+         self.real = real
+         self.img = img
 
-#     def showNumber (self):
-#         print (self.real , "i +", self.img, "j")
+     def showNumber (self):
+         print (self.real , "i +", self.img, "j")
 
 
 
-#     def __add__ (self, num2):
+     def __add__ (self, num2):
 
-#         newReal = self.real + num2.real
-#         newImg = self.img + num2.img
-#         return Complex (newReal, newImg)
+         newReal = self.real + num2.real
+         newImg = self.img + num2.img
+         return Complex (newReal, newImg)
 
 
            
-# num1 = Complex (1, 3)
-# num1.showNumber ()
+ num1 = Complex (1, 3)
+ num1.showNumber ()
 
-# num2 = Complex (4, 6)
-# num2.showNumber()
+ num2 = Complex (4, 6)
+ num2.showNumber()
 
 
-# num3 = num1 + num2
-# num3.showNumber ()
+ num3 = num1 + num2
+ num3.showNumber ()
 
 
 
@@ -325,22 +323,22 @@
 
 
 
-# class Circle:
+ class Circle:
 
-#     def __init__ (self, radius):
+     def __init__ (self, radius):
 
-#         self.radius = radius
+         self.radius = radius
 
-#     def area (self):
+     def area (self):
 
-#         return (22/7) * self.radius
+        return (22/7) * self.radius
 
-#     def perimeter (self):
-#         return 2 * (22/7) * self.radius
+     def perimeter (self):
+         return 2 * (22/7) * self.radius
 
-# c1 = Circle (21)
-# print (c1.area())
-# print (c1.perimeter())        
+ c1 = Circle (21)
+ print (c1.area())
+ print (c1.perimeter())        
 
 
 
@@ -355,31 +353,31 @@
 
 
 
-# class Employee:
+ class Employee:
 
-#     def __init__ (self, role, department, salary):
-#         self.role = role
-#         self.department = department
-#         self.salary = salary
+     def __init__ (self, role, department, salary):
+         self.role = role
+         self.department = department
+         self.salary = salary
 
-#     def showDetails (self):
-#         print ("role =", self.role)
-#         print ("department =", self.department)
-#         print ("salary =", self.salary) 
-
-
-
-# class  Engineer (Employee):
-
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-#         super().__init__ ("Engineer", "IT", "70,000")
+     def showDetails (self):
+         print ("role =", self.role)
+         print ("department =", self.department)
+         print ("salary =", self.salary) 
 
 
 
-# eng1 = Engineer ("Hafiz Salman Sarwar", 30)
-# eng1.showDetails()
+ class  Engineer (Employee):
+
+     def __init__(self, name, age):
+         self.name = name
+         self.age = age
+         super().__init__ ("Engineer", "IT", "70,000")
+
+
+
+ eng1 = Engineer ("Hafiz Salman Sarwar", 30)
+ eng1.showDetails()
 
 
 
@@ -388,9 +386,9 @@
 
 
 
-# Create a class called order which stores item & it's price.
-# Use Dunder function __gt__() to convey that:
-#                                  order > order2 if price of order2
+ Create a class called order which stores item & it's price.
+ Use Dunder function __gt__() to convey that:
+                                  order > order2 if price of order2
 
 
 
