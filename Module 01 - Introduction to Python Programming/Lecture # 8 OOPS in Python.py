@@ -386,7 +386,7 @@ _ _init_ _ Function
 
 
 
- Create a class called order which stores item & it's price.
+# Create a class called order which stores item & it's price.
  Use Dunder function __gt__() to convey that:
                                   order > order2 if price of order2
 
